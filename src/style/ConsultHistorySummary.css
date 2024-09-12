@@ -1,0 +1,33 @@
+.consult-history-summary {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.consult-history-summary table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.consult-history-summary th,
+.consult-history-summary td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.consult-history-summary button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #6f79e9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.consult-history-summary button:hover {
+  background-color: #5967c1;
+}

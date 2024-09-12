@@ -1,0 +1,78 @@
+@font-face { font-family: 'GoyangIlsan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GoyangIlsan.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+body {
+  background-color: #D1DBEB;
+  font-family: Arial, sans-serif; 
+}
+.tech-wrap {
+  width: 100vw; height: 90vh;
+  display: flex;
+  gap: 50px;
+}
+.techbox {
+  position: relative;
+  background: #000;
+  width: 450px; height: 500px;
+  border: 7px solid #f8f8f8;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+  border-radius: 10px;
+  left: 700px;
+  top:80px;
+}
+.tech img {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.techbox:before {
+  content: '';
+  background: #fff;
+  width: 0px; height: 1px;
+  position: absolute; right: 20px; top: 20px;
+  transition: all 0.35s ease;
+}
+.techbox:after {
+  content: '';
+  background: #fff;
+  width: 1px; height: 0px;
+  position: absolute; right: 20px; top: 20px;
+  transition: all 0.35s ease;
+}
+
+.techbox .techinfo {
+  position: absolute; left: 0; bottom: 0;
+  color: #fff;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  font-family: 'GoyangIlsan';
+}
+.techbox .techinfo h3 {
+  font-size: 24px;
+  line-height: 40px;
+  overflow: hidden; 
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-bottom: 3px;
+}
+.techbox .techinfo p {
+  font-size: 16px;
+  overflow: hidden; 
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.techbox:hover .techinfo {
+  opacity: 1;
+}
+.techbox:hover img {
+  opacity: 0.2;
+}
+.techbox:hover:before {
+  width: 60px;
+}
+.techbox:hover:after {
+  height: 60px;
+}

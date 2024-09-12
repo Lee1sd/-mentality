@@ -1,0 +1,40 @@
+.image-selector {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.image-list {
+  display: flex;
+  overflow-x: auto; /* 가로 스크롤 활성화 */
+  gap: 20px;
+  padding: 10px;
+  white-space: nowrap; /* 이미지가 한 줄로 나타나도록 */
+}
+
+.image-option {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  transition: border-color 0.3s;
+  flex-shrink: 0; /* 이미지가 줄어들지 않도록 */
+}
+
+.image-option:hover {
+  border-color: #007bff;
+}
+
+/* 스크롤바 스타일링 (선택사항) */
+.image-list::-webkit-scrollbar {
+  height: 8px;
+}
+
+.image-list::-webkit-scrollbar-thumb {
+  background-color: #007bff;
+  border-radius: 4px;
+}
+
+.image-list::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}

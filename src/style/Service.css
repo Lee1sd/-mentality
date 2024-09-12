@@ -1,0 +1,52 @@
+.services {
+	padding: 60px 20px;
+	background-color: #D1DBEB;
+	text-align: center;
+}
+
+.service-title {
+	font-weight: bold;
+	font-size: 32px;
+	margin-bottom: 80px;
+    margin: 0 50px;
+}
+
+.service-list {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 40px;
+}
+
+.service-item {
+	font-size: 20px;
+	text-align: center;
+}
+
+.circle {
+	width: 150px;
+	height: 150px;
+	background-color: white;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	font-weight: bold;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.title-container {
+	display: flex;
+	align-items: center;
+	justify-content: center; /* 중앙 정렬 */
+	margin-bottom: 80px; /* `service-title`의 하단 여백을 설정 */
+  }
+
+.line{
+	flex: 1; /* 라인이 공간을 차지하도록 설정 */
+	height: 1px; /* 라인의 두께 */
+	background-color: black; /* 라인의 색상 */
+
+}

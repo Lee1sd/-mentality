@@ -1,0 +1,70 @@
+.consult-history {
+  border: none;  
+  background-color: #ffffff;
+}
+
+
+.consult-history-container {
+  background-color: #ffffff; /* 박스의 배경색을 밝게 */
+  padding: 25px; /* 박스 안쪽 여백을 넉넉하게 */
+  border-radius: 10px; /* 박스의 모서리를 더 둥글게 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과를 더 부드럽게 */
+  border: 1px solid #e0e0e0; /* 박스의 테두리를 더 밝게 */
+  margin-top: 25px;
+  margin-bottom: 25px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* 부드러운 애니메이션 추가 */
+}
+
+.consult-history-container:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* 마우스를 올렸을 때 그림자 효과 증가 */
+  transform: translateY(-2px); /* 마우스를 올렸을 때 살짝 위로 이동 */
+}
+
+.consult-history-title {
+  font-size: 22px; /* 제목의 글자 크기 살짝 감소 */
+  font-weight: 600; /* 글자 굵기 조정 */
+  margin-bottom: 20px;
+  color: #333; /* 제목의 글자색 */
+}
+
+.consult-history-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.consult-history-table th,
+.consult-history-table td {
+  padding: 12px 15px; /* 셀 안의 여백을 더 넉넉하게 */
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0; /* 각 행의 하단 테두리를 더 밝게 */
+  color: #555; /* 글자색을 중간 톤으로 조정 */
+}
+
+.consult-history-table th {
+  font-weight: 700; /* 헤더 셀의 글자 굵기 더 두껍게 */
+  background-color: #f9f9f9; /* 헤더 셀의 배경색을 밝게 */
+}
+
+.consult-history-table tr {
+  transition: background-color 0.2s ease; /* 배경색 변화 애니메이션 추가 */
+}
+
+.consult-history-table tr:hover {
+  background-color: #f3f3f3; /* 마우스를 올렸을 때의 배경색을 더 밝게 */
+}
+
+.consult-history-button {
+  background-color: #6f79e9; /* 버튼의 배경색을 부드러운 톤으로 */
+  color: white;
+  padding: 12px 25px; /* 버튼의 안쪽 여백을 더 넉넉하게 */
+  border: none;
+  border-radius: 8px; /* 버튼의 모서리를 더 둥글게 */
+  cursor: pointer;
+  font-size: 16px; /* 버튼의 글자 크기 조정 */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* 애니메이션 효과 추가 */
+}
+
+.consult-history-button:hover {
+  background-color: #5761c7; /* 마우스를 올렸을 때 버튼의 배경색을 더 진하게 */
+  transform: translateY(-2px); /* 마우스를 올렸을 때 살짝 위로 이동 */
+}

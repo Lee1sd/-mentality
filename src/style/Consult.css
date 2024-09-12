@@ -1,0 +1,451 @@
+/* src/Consult.css */
+html,
+.body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #D1DBEB;
+}
+
+/*기본 여백을 제거됨으로 요소가 페이지의 가장자리까지 정확하게 배치됨
+전체 화면 레이아웃을 정확하게 설정하고, 여백 문제를 방지하기 위해 쓰는 것이 좋음*/
+
+.cont {
+    padding: 0;
+    position: relative;
+}
+
+.Consult-img {
+    width: 100vw;
+    height: 560px;
+    object-fit: cover;
+    /* 이미지가 부모 요소를 완전히 덮도록 조정 */
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* 그림자 추가 */
+    z-index: 10;
+    /* 이미지 위에 표시되도록 설정 */
+    margin: 0;
+}
+
+.title {
+    text-align: center;
+    color: white;
+    font-size: 23px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.subheading {
+    text-align: center;
+    color: white;
+
+}
+
+/*감정 소개 란*/
+.Consult-content {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    /* 가로 정렬 */
+    margin-top: 20px;
+    padding: 0 20px;
+    align-items: flex-start;
+
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7,
+.box8 {
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 50%;
+    /*둥근 원*/
+    width: 194px;
+    height: 191px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    /*박스 넘치는 이미지 보이지 않도록*/
+}
+
+.box1 {
+    left: 111px;
+    /*간격*/
+    top: 111px;
+}
+
+.box2 {
+    right: -790px;
+    top: 111px;
+}
+
+.box3 {
+    left: -277px;
+    top: 400px;
+}
+
+.box4 {
+    left: 406px;
+    top: 400px;
+}
+
+.box5 {
+    left: -665px;
+    top: 689px;
+}
+
+.box6 {
+    left: 18px;
+    top: 689px;
+}
+
+.box7 {
+    left: -1053px;
+    top: 978px;
+}
+
+.box8 {
+    left: -370px;
+    top: 978px;
+}
+
+.unrest,
+.blue,
+.stress,
+.angry,
+.sleep,
+.fear,
+.happiness,
+.loneliness {
+    position: absolute;
+    top: 20px;
+    left: 24px;
+    width: 75%;
+    height: 75%;
+}
+
+.Sentence1,
+.Sentence2,
+.Sentence3,
+.Sentence4,
+.Sentence5,
+.Sentence6,
+.Sentence7,
+.Sentence8 {
+    position: absolute;
+    font-size: large;
+    line-height: 2.3;
+    /* 줄 간격 설정 (1.5배)*/
+    width: 520px;
+}
+
+.Sentence1 {
+    left: 350px;
+    top: 110px;
+}
+
+.Sentence2 {
+    left: 1230px;
+    top: 110px;
+
+}
+
+.Sentence3 {
+    left: 350px;
+    top: 400px;
+}
+
+.Sentence4 {
+    left: 1230px;
+    top: 400px;
+}
+
+.Sentence5 {
+    left: 350px;
+    top: 690px;
+}
+
+.Sentence6 {
+    left: 1230px;
+    top: 690px
+}
+
+.Sentence7 {
+    left: 350px;
+    top: 980px;
+}
+
+.Sentence8 {
+    left: 1230px;
+    top: 980px;
+}
+
+.line1 {
+    position: absolute;
+    width: 700px;
+    height: 0px;
+    left: 50px;
+    top: 1300px;
+
+    border: 1px solid #000000;
+    transform: rotate(0.14deg);
+
+}
+
+.line2 {
+    position: absolute;
+    width: 700px;
+    height: 0px;
+    right: -200px;
+    top: 1300px;
+
+    border: 1px solid #000000;
+    transform: rotate(0.14deg);
+
+}
+
+.text {
+    position: absolute;
+    width: 142px;
+    height: 40px;
+    left: 820px;
+    top: -10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 100%;
+
+
+    color: #000000;
+
+}
+
+.Goals {
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+    background-color: #D1DBEB;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 810px 20px 囗rgba(0, 0, 0, 0.1);
+    top: 1500px;
+    height: 70%;
+    
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: #D1DBEB;
+    padding: 30px;
+}
+
+.Goals-items {
+    display: flex;
+    flex: 1;
+
+    margin: 30px 0;
+    /* 상하 여백을 늘려서 inner와의 거리 증가 */
+    gap: 20px;
+    /* 항목 간 간격 추가 */
+    line-height: 1.5;
+    /* 줄 간격 설정 */
+    text-align: center;
+    
+}
+
+.Goals-item {
+    flex: 25%;
+    text-align: center;
+    padding: 20px;
+    white-space: pre-wrap;
+    box-sizing: border-box;
+    margin: 20px 20px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* 호버 시 애니메이션 */
+    line-height: 2.3;
+    width: 340px;
+    height: 400px;
+    
+}
+
+.Goals-item:hover {
+    transform: scale(1.05);
+}
+
+.Goals-item a {
+    text-decoration: none;
+    /* 링크의 기본 밑줄 제거 */
+    color: inherit;
+    /* 부모 요소의 텍스트 색상을 상속받도록 설정 */
+}
+
+/* Goals-items-B-left 및 Goals-items-B-right 스타일 수정 */
+.B-left,
+.B-right {
+    font-size: 30px;
+    /* 글자 크기 증가 */
+    padding: 20px 30px;
+    background-color: #D1DBEB;
+    border-radius: 12px;
+    /* 둥근 모서리 설정 */
+    border: none;
+
+}
+
+.B-left:hover,
+.B-right:hover {
+    background-color: #D1DBEB;
+    /* 호버 시 배경색 변경 */
+    transform: scale(1.1);
+    /* 호버 시 버튼 확대 효과 */
+}
+
+/* .Goals-item 안의 h3 요소의 글자 크기 */
+.Goals-item h3 {
+
+    font-size: 2em;
+    /* 원하는 크기로 설정 */
+    margin: 0;
+    /* 필요 시 여백 조절 */
+    padding: 0;
+    /* 필요 시 패딩 조절 */
+    transform: translateY(25px);
+    /* Y축을 기준으로 5px 아래로 이동 */
+    font-family: 'Inter';
+    font-style: normal;
+
+}
+
+/* #text 요소의 글자 크기 */
+#text {
+    font-size: 20px;
+    /* 원하는 크기로 설정 */
+    color: #000;
+    /* 텍스트 색상 조절 */
+    margin: 0;
+    /* 필요 시 여백 조절 */
+    padding: 0;
+    /* 필요 시 패딩 조절 */
+    margin-top: 15px;
+    /* 상단 여백 조정 */
+    transform: translateY(30px);
+    /* Y축을 기준으로 5px 아래로 이동 */
+}
+
+.qanda {
+    position: absolute;
+    width: 500px;
+    height: 100px;
+    left: 680px;
+    top: 2890px;
+    background-color: #828cf7;
+    border-radius: 10px;
+}
+
+.qanda a {
+    text-decoration: none;
+    color: #000;
+
+}
+
+@media (max-width: 768px) {
+
+    /* 전체 콘텐츠 블록을 세로로 배치 */
+    .cont {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .Consult-img{
+        position: relative;
+        top: -20px;
+    }
+
+
+    .title {
+        font-size: 18px;
+        /* 모바일에서 글자 크기 조정 */
+        padding: 23px;
+        top: 23%;
+        /* 이미지의 상단에서 더 높은 위치 */
+        left: 50%;
+        transform: translate(-50%, -40%);
+        /* 중앙 정렬을 위한 위치 조정 */
+        z-index: 20;
+    }
+
+    .subheading {
+        font-size: 20px;
+    }
+
+    .box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8 {
+        flex: 1 1 auto;
+        /* 자동 조정 */
+        margin: 520px 0;
+        /* 상하 여백 추가 */
+    }
+
+    .Sentence1,.Sentence2,.Sentence3,.Sentence4,.Sentence5,.Sentence6,.Sentence7,.Sentence8 {
+        flex: 1 1 auto;
+        /* 자동 조정 */
+        margin: 520px 0;
+        /* 상하 여백 추가 */
+    }
+
+    .line1,
+    .line2,
+    .Goals {
+        margin-top: 520px;
+    }
+
+    .Goals {
+        margin-top: -30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 중앙 정렬 */
+    }
+     
+
+    .inner {
+        display: flex;
+        justify-content: space-between;
+        margin-left: -50px;
+    }
+
+    .Goals-items {
+        position: relative;
+        flex-direction: column;
+        /* 슬라이드 아이템을 세로로 배치 */
+        align-items: center;
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .Goals-item{
+        width: 300px;
+        
+    }
+    .B-left, .B-right{
+        margin: -3px;
+    }
+}

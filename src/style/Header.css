@@ -1,0 +1,129 @@
+/* 기존 스타일 유지 */
+header {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+/* 로고 스타일 */
+a.logo {
+  color: #426B1F;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 50px;
+  position: absolute; /* 절대 위치를 사용하여 왼쪽 고정 */
+  left: 30px; /* 좌측으로 30px 이동 */
+  line-height: 40px; /* 부모 요소인 header의 height와 동일하게 설정 */
+  top:-8px;
+}
+
+/* 네비게이션 링크 */
+.nav-links {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 30px; /* 우측에서 20px 위치 */
+  top: 50%; /* 상단에서 중앙으로 정렬 */
+  transform: translateY(-50%); /* 수직 중앙 정렬 */
+}
+
+/* 네비게이션 링크 스타일 */
+.nav-links a{
+  margin-left: 20px;
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  line-height: 1.5;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+  padding: 0 15px;
+  min-width: 80px;
+  text-align: center;
+  vertical-align: middle; /* 수직 중앙 정렬 */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.nav-links a:hover,
+.nav-links button:hover {
+  color: #426B1F;
+  transform: translateY(-2px);
+}
+
+/* 프로필 메뉴 스타일 */
+.profile-menu {
+  position: relative;
+  
+}
+
+/* 프로필 드롭다운 메뉴 - 기본적으로 숨김 */
+.profile-dropdown {
+  display: none; /* 기본적으로 숨김 처리 */
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+.profile-button{
+  background-color: #6F79E9; /* 배경색 */
+  width: 126px; /* 너비 설정 */
+  height: 40px; /* 높이 설정 */
+  border-radius: 10px; /* 둥글게 만들기 */
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center; /* 텍스트 중앙 정렬 */
+  margin-left: 25px; /* 왼쪽 여백 추가 */
+}
+
+/* 프로필 버튼에 마우스를 올리면 로그아웃 버튼 보이게 하기 */
+.profile-menu:hover .profile-dropdown {
+  display: block; /* hover 시 드롭다운 보이게 처리 */
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* 드롭다운 내 링크 및 버튼 스타일 */
+.profile-link {
+  text-decoration: none;
+  color: #426B1F;
+  display: block;
+  font-size: 12px;
+  padding: 10px 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.logout-button{
+  text-decoration: none;
+  color: #000000;
+  display: block;
+  font-size: 15px;
+  background: none;
+  width: 105px;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  height: 20px;
+  z-index: 2000;
+}
